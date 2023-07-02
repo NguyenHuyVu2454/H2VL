@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poltawski Nowy', serif;
+    
+}
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+    background-color: white;
+}
+
+header .brand{
+    color: #000;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+main{
+    margin-top: 100px;
+}
+.main_h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: hsla(0,100%,50%,1);
+}
+.main_main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main_table {
+    width: 400px;
+    text-align: center;
+}
+
+.main_img img {
+    width: 350px;
+    padding: 20px 10px;
+}
+
+.main_img:hover .main_lh {
+    display: block;
+    transition: 1.5 ease;
+}
+
+.main_tt {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main_tt a {
+    text-decoration: none;
+    font-size: 15px;
+    padding-top: 9px;
+    color: red;
+}
+.main_tt h2{
+    font-weight: 900;
+    color: #0000ff;
+}
+.main_lh {
+    position: absolute;
+    display: none;
+    padding: 10px 10px;
+    background-color: gray;
+    width: 350px;
+    margin-top: -50px;
+    margin-left: 25px;
+}
+.main_lh h3 {
+    text-transform: uppercase;
+    color: white;
+}
+.main_btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.main_btn button{
+    width: 200px;
+    height: 40px;
+    border: 2px solid dodgerblue;
+    background-color: dodgerblue;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 25px;
+}
+.FomrAA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconexit{
+    position: relative;
+    padding: 10px 10px;
+    bottom: 40px;
+    left: 30px;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+.iconexit img{
+    position: absolute;
+    width: 25px;
+}
+.registerForm_form{
+    position: absolute;
+    border: 2px solid rgba(255, 249, 249, 0.677);
+    box-shadow: 20px 20px 50px whitesmoke;
+    border-radius: 20px;
+    padding: 50px 50px;
+    background-color: #fff;
+}
+.registerForm_form form{
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+}
+.registerForm_form h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    color: black;
+}
+.registerForm_form form input[type=text]{
+    width: 400px;
+    height: 35px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #fff;
+    color: black;
+}
+.registerForm_form form select{
+    width: 400px;
+    height: 35px;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+}
+.registerForm_form form select option{
+    text-transform: uppercase;
+    color: black;
+}
+.registerForm_form form input[type=submit]{
+    width: 150px;
+    height: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid dodgerblue;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.phanloai{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+.phanloai button{
+    cursor: pointer;
+    width: 115px;
+    font-size: 15px;
+    font-weight: 550;
+    margin: 5px 5px;
+    padding: 2px 2px;
+    border-radius: 15px 50px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid dodgerblue;
+}
+.phanloai button:hover{
+    color: whitesmoke;
+    animation: colorChange 1s infinite;
+}
+@keyframes colorChange {
+    0% {
+      background-color: #007bff;
+    }
+    50% {
+      background-color: #0056b3;
+    }
+    100% {
+      background-color: #007bff;
+    }
+  }
+.footer_1{
+    margin-top: 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer_img img{
+    width: 100%;
+    height: 100%;
+}
+.footer_form form{
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+.footer_form h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+}
+.footer_form form input[type=text]{
+    width: 400px;
+    height: 35px;
+    font-weight: 600;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    background-color: #222;
+    color: white;
+}
+.footer_form form select{
+    width: 400px;
+    height: 35px;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: #222;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+.footer_form form select option{
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.footer_form form input[type=submit]{
+    width: 150px;
+    height: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid dodgerblue;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.footer_2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #222;
+    color: whitesmoke;
+    line-height: 25px;
+    padding: 20px 10px;
+}
+.footer_2_1 h3{
+    text-transform: uppercase;
+}
+.footer_2_1 hr{
+    width: 100px;
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+}
+.footer_2_1 p{
+    font-weight: 500;
+}
+.footer_2_2 h3{
+    text-transform: uppercase;
+}
+.footer_2_2 hr{
+    width: 100px;
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+}
+.footer_2_2 p{
+    font-weight: 500;
+}
+.footer_2_3 h3{
+    text-transform: uppercase;
+}
+.footer_2_3 hr{
+    width: 80px;
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+}
+.footer_2_3 p{
+    padding: 15px 10px;
+}
+.footer_2_3 p a{
+    padding: 10px 10px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 120px;
+}
+.footer_3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: gray;
+}
+#search-container{
+   padding: 15px 15px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+#search-container input{
+    margin-right: 10px;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid dodgerblue;
+    font-size: 15px;
+}
+#search-container button{
+    width: 100px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    cursor: pointer;
+}
+#search-container button:hover{
+    background-color: cornflowerblue;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@media (max-width:1040px){
+    header{
+        padding: 12px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(1, 1, 1, 0.5);
+    }
+    header .navigation .navigation-items a{
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    header .navigation .navigation-items a:before{
+        background-color: #222;
+        height: 3px;
+    }
+    header .navigation.active .navigation-items{
+        background-color: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+    .menu-btn{
+        background: url(../img/1.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3 ease;
+    }
+    .menu-btn.active{
+        z-index: 999;
+        background: url(../img/877932.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+}
+@media (max-width:600px){
+    .footer_2{
+        display: grid;
+        text-align: center;
+        line-height: 30px;
+    }
+    .footer_2_1 hr, .footer_2_2 hr, .footer_2_3 hr{
+        position: relative;
+        display: inline-block;
+    }
+    .registerForm_form{
+        padding: 20px 20px;
+    }
+    .iconexit{
+        bottom: 20px;
+        left: 20px;
+    }
+    .iconexit img{
+        width: 20px;
+    }
+}

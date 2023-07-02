@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexus LC 500h</title>
+    <link rel="shortcut icon" href="../img/logoH.png">
+    <link rel="stylesheet" href="../CSS/style_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../introduction.html">Giới thiệu</a>
+                <a href="../product.html">Các dòng xe</a>
+                <a href="../lienhe.html">Liên hệ</a>
+                <a href="../register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_1">
+            <div class="col-2">
+                <img src="../img/lexus-lc-500h.webp" id="ProductImg">
+              <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../img/lexus-lc-500h-1.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/lexus-lc-500h-2.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/lexus-lc-500h-3.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/lexus-lc-500h-4.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/lexus-lc-500h-5.webp" class="SmallImg">
+                </div>
+              </div>
+            </div>
+            <div class="main_text">
+                <div class="text">
+                    <h1>Lexus LC 500h</h1>
+                    <p>
+                        &nbsp;&nbsp;Lexus LC 500 và Lexus LC 500h là mẫu xe thú vị cả từ thiết kế cho đến khả năng vận hành, sở hữu nhiều tính năng thông minh với lối tạo hình trẻ trung, mới mẻ, sắc sảo bên ngoài nhưng lại rất mềm mại và sang trọng bên trong, khối động cơ 5.0 lít cùng hộp số 10 cấp và hàng loạt các tính năng an toàn cao cấp hứa hẹn sẽ đẩy cảm xúc của hành khách lên đến tột cùng.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;Mẫu xe thể thao sang trọng của Lexus là LC500 2023 sở hữu kích thước tổng thể 4760 x 1920 x 1345 mm.
+                    </p>
+                </div>
+                <div class="table">
+                    <h2>
+                        Thông số kỹ thuật Lexus LC 500h 2023
+                    </h2>
+                    <table border="1">
+                        <tr>
+                            <th>Thông số</th>
+                            <th>Lexus LC 500h</th>
+                        </tr>
+                        <tr>
+                            <td>Số chỗ ngồi</td>
+                            <td>04</td>
+                        </tr>
+                        <tr>
+                            <td>Kiểu xe</td>
+                            <td>Coupe</td>
+                        </tr>
+                        <tr>
+                            <td>Dung tích động cơ (cc)</td>
+                            <td>3,5L</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước DxRxC</td>
+                            <td>4760x 1920x 1346</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều dài cơ sở</td>
+                            <td>2870</td>
+                        </tr>
+                        <tr>
+                            <td>Động cơ</td>
+                            <td>Xăng 3.5L V6</td>
+                        </tr>
+                        <tr>
+                            <td>Tốc độ tối đa</td>
+                            <td>250 (km/h)</td>
+                        </tr>
+                        <tr>
+                            <td>Dung tích bình nhiên liệu</td>
+                            <td>84 lít</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ dẫn động</td>
+                            <td>RWD</td>
+                        </tr>
+                        <tr>
+                            <td>Tăng tốc (0-96 km/h)</td>
+                            <td>4,7s</td>
+                        </tr>
+                        <tr>
+                            <td>Tổng công suất</td>
+                            <td>354/6600 (Hp/Rpm)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+                Thành lập vào 20/05/2023 bởi H2VL
+        </p>
+    </footer>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    
+    SmallImg[0].onclick = function () {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src=SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src=SmallImg[4].src;
+    }
+    </script>
+</body>
+</html>

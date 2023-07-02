@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dăng nhập HL2V</title>
+    <link rel="shortcut icon" href="img/logoH.png">
+    <link rel="stylesheet" href="CSS/style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">hl2v</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Trang chủ</a>
+                <a href="introduction.html">Giới thiệu</a>
+                <a href="product.html">Sản phẩm</a>
+                <a href="lienhe.html">Liên hệ</a>
+                <a href="">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+
+
+   <section>
+    <div class="form-box">
+        <div class="form-value">
+            <form action="">
+                <h2>Đăng nhập</h2>
+                
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="pasword" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox">Ghi nhớ tài khoản || <a href="#">Quên mật khẩu?</a> </label>
+                   
+                </div>
+                <button>Đăng nhập</button>
+                <div class="register">
+                    <p>Chưa có tài khoản || <a href="#">Đăng kí</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+   </section>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+</script>
+</html>

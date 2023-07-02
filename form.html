@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thông tin đăng ký thành viên H2VL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h1{
+            color: blue;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h2{
+            color: red;
+            text-align: center;
+        }
+        .form{
+            display: flex;
+            justify-content: space-around;
+        }
+        .img img{
+            width: 200px;
+        }
+        .text h3{
+            color: dodgerblue;
+        }
+        .text ul{
+            list-style: none;
+            line-height: 25px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Cảm ơn bạn đã đăng ký thành viên H2VL!
+    </h1>
+    <h2>Thông tin đăng ký của bạn:</h2>
+    <p><strong>Họ và tên:</strong> $fullName</p>
+    <p><strong>Tên tài khoản:</strong> $username</p>
+    <p><strong>Email:</strong> $email</p>
+    <p><strong>Số điện thoại:</strong> $phoneNumber</p>
+    <p><strong>Giới tính:</strong> $gender</p>
+    <div class="form">
+        <div class="img">
+            <img src="img/logoH.png" alt="">
+        </div>
+        <div class="text">
+            <h3>
+                Đội ngũ nhân viên
+            </h3>
+            <ul>
+                <li><i class="fa-solid fa-user"></i> Nguyễn Huy Vũ</li>
+                <li><i class="fa-solid fa-user"></i> Trần Nhật Hoàng</li>
+                <li><i class="fa-solid fa-user"></i> Hoàng Tấn Lộc</li>
+                <li><i class="fa-solid fa-user"></i> Phạm Quốc Việt</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

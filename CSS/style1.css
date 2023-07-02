@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poltawski Nowy', serif;
+    
+}
+body{
+    background: url(../img/pexels-ryan-west-1719648.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+    background-color: white;
+}
+
+header .brand{
+    color: #000;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+marquee{
+    font-size: 18px;
+    position: absolute;
+    margin-top: -20px;
+    color: azure;
+
+}
+main{
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+}
+.main_text h1{
+    position: relative;
+    padding: 15px 240px;
+    color: #c4161c;
+}
+.main_1{
+    display: flex;
+    justify-content: center;
+}
+.main_1 p{
+    width: 800px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    color: whitesmoke;
+}
+.main_col{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.main_col_1{
+    text-align: left;
+    width: 400px;
+    margin: 10px 10px;
+    border: 1px solid transparent;
+    box-shadow: 20px 20px 50px grey;
+    border-radius: 20px;
+    opacity: 0.02;
+    /* background-color: transparent; */
+}
+.main_col_1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.main_col_h2{
+    text-align: center;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: #c4161c;
+    font-size: 15px;
+}
+.main_col_p{
+    text-align: justify;
+    font-size: 16px;
+    padding: 5px 10px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.slider{
+    display: flex;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+.slider:before{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: "";
+    width: 23.958%;
+    height: 110px;
+    /* background-color: linear-gradient(-90deg, hsla(0, 0%, 96.9%, 0), #f7f7f7); */
+}
+.slider:after{
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 23.958%;
+    height: 110px;
+    /* background: linear-gradient(90deg,hsla(0, 0%, 96.9%, 0), hsla(0, 0%, 97%, 0.751) 99%); */
+}
+.slider .slider-track{
+    display: flex;
+    animation: scroll 35s linear infinite;
+    -webkit-animation: scroll 35s linear infinite;
+    width: calc(240px * 10);
+}
+.slider .slide{
+    display: flex;
+}
+.slider .slide img{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@keyframes scroll {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-240px * 5));
+        transform: translateX(calc(-240px * 5));
+    }
+}
+footer{
+    position: relative;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(131, 131, 131);
+    margin-top: 54px;
+    opacity: 0.8;
+}
+@media (max-width:1040px){
+    header{
+        padding: 12px 20px;
+    }
+    body{
+        background-size: cover;
+        position: relative;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(1, 1, 1, 0.5);
+    }
+    header .navigation .navigation-items a{
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    header .navigation .navigation-items a:before{
+        background-color: #222;
+        height: 3px;
+    }
+    header .navigation.active .navigation-items{
+        background-color: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+    .menu-btn{
+        background: url(../img/1.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3 ease;
+    }
+    .menu-btn.active{
+        z-index: 999;
+        background: url(../img/877932.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+    .main_text h1{
+        position: relative;
+        padding: 15px 10px;
+        text-align: center;
+        color: #c4161c;
+    }
+    .main_1{
+        padding: 15px 10px;
+    }
+    .main_1 p{
+        width: auto;
+        color: white;
+    }
+}
+@media (max-width:1040px){
+    body{
+        background: url(../img/pexels-brady-knoll-3221163.jpg);
+        width: auto;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

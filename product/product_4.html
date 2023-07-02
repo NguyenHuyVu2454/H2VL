@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Innova Crysta</title>
+    <link rel="shortcut icon" href="../img/logoH.png">
+    <link rel="stylesheet" href="../CSS/style_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../introduction.html">Giới thiệu</a>
+                <a href="../product.html">Các dòng xe</a>
+                <a href="../lienhe.html">Liên hệ</a>
+                <a href="../register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_1">
+            <div class="col-2">
+                <img src="../img/innova-crysta.webp" id="ProductImg">
+              <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../img/innova-crysta-1.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/innova-crysta-2.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/innova-crysta-3.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/innova-crysta-4.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/innova-crysta-5.webp" class="SmallImg">
+                </div>
+              </div>
+            </div>
+            <div class="main_text">
+                <div class="text">
+                    <h1>Toyota Innova Crysta</h1>
+                    <p>
+                        &nbsp;&nbsp;Audi A4 là thế hệ thứ 6 tính đến thời điểm hiện tại. Đây là một trong những mẫu sedan hạng D bán chạy nhất tại Việt Nam, bên cạnh những tên tuổi khác như Mercedes-Benz C180 AMG hay BMW 320i…
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;Audi A4 2023 được tinh chỉnh và nâng cấp với vẻ ngoài rất thời trang, năng động và pha lẫn sự sang trọng. Ngoại thất của xe được lấy cảm hứng từ đàn anh Audi A8L. 
+                    </p>
+                </div>
+                <div class="table">
+                    <h2>
+                        Thông số kỹ thuật Toyota Innova Crysta
+                    </h2>
+                    <table border="1">
+                        <tr>
+                            <th>Thông số</th>
+                            <th>Toyota Innova Crysta</th>
+                        </tr>
+                        <tr>
+                            <td>Kiểu xe</td>
+                            <td>MPV đa dụng</td>
+                        </tr>
+                        <tr>
+                            <td>Số chỗ ngồi</td>
+                            <td>7 hoặc 8</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước Dài x Rộng x Cao (mm)</td>
+                            <td>4735 x 1830 x 1795 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều dài cơ sở (mm)</td>
+                            <td>2750 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Nhiên liệu</td>
+                            <td>Xăng</td>
+                        </tr>
+                        <tr>
+                            <td>Động cơ</td>
+                            <td>DOHC, VVT-i kép, 16 van</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất cực đại </td>
+                            <td>137</td>
+                        </tr>
+                        <tr>
+                            <td>Mô men xoắn cực đại	</td>
+                            <td>183</td>
+                        </tr>
+                        <tr>
+                            <td>Hộp số</td>
+                            <td>Tự động 6 cấp/tay 5 cấp</td>
+                        </tr>
+                        <tr>
+                            <td>Dẫn động</td>
+                            <td>Cầu sau</td>
+                        </tr>
+                        <tr>
+                            <td>Trợ lực lái</td>
+                            <td>Thủy lực</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+                Thành lập vào 20/05/2023 bởi H2VL
+        </p>
+    </footer>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    
+    SmallImg[0].onclick = function () {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src=SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src=SmallImg[4].src;
+    }
+    </script>
+</body>
+</html>

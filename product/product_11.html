@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyundai Creta</title>
+    <link rel="shortcut icon" href="../img/logoH.png">
+    <link rel="stylesheet" href="../CSS/style_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../introduction.html">Giới thiệu</a>
+                <a href="../product.html">Các dòng xe</a>
+                <a href="../lienhe.html">Liên hệ</a>
+                <a href="../register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_1">
+            <div class="col-2">
+                <img src="../img/creta-exterior.webp" id="ProductImg">
+              <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../img/creta-exterior-1.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/creta-exterior-2.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/creta-exterior-r3.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/creta-exterior-4.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/creta-exterior-5.webp" class="SmallImg">
+                </div>
+              </div>
+            </div>
+            <div class="main_text">
+                <div class="text">
+                    <h1>Hyundai Creta</h1>
+                    <p>
+                        &nbsp;&nbsp;Hyundai Creta 2023 được đánh giá đẹp hơn, rộng hơn, hàm lượng công nghệ vượt trội hơn Kona nhưng lại có một điểm làm người mua lăn tăn.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;Hyundai Creta 2023 về Việt Nam góp thêm một lựa chọn mới mẻ và hấp dẫn vào phân khúc 5 chỗ gầm cao hạng B vốn đang rất ăn khách. Mẫu xe tạo ấn tượng mạnh khi sở hữu hàm lượng công nghệ cao, được trang bị nhiều tính năng mà ngay cả các đối thủ giá bán cao hơn vẫn chưa có.
+                    </p>
+                </div>
+                <div class="table">
+                    <h2>
+                        Thông số kỹ thuật Hyundai Creta 2023
+                    </h2>
+                    <table border="1">
+                        <tr>
+                            <th>Thông số</th>
+                            <th>Hyundai Creta</th>
+                        </tr>
+                        <tr>
+                            <td>Dài x rộng x cao (mm)</td>
+                            <td>4.315 x 1.790 x 1.660</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều dài cơ sở (mm)</td>
+                            <td>2.610</td>
+                        </tr>
+                        <tr>
+                            <td>Khoảng sáng gầm xe (mm)</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>Bán kính quay đầu (m)</td>
+                            <td>5,2</td>
+                        </tr>
+                        <tr>
+                            <td>Động cơ</td>
+                            <td>1.5L xăng</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất cực đại (Ps/rpm)</td>
+                            <td>115/6.300</td>
+                        </tr>
+                        <tr>
+                            <td>Mô men xoắn cực đại</td>
+                            <td>144/4.500</td>
+                        </tr>
+                        <tr>
+                            <td>Hộp số</td>
+                            <td>IVT</td>
+                        </tr>
+                        <tr>
+                            <td>Dẫn động</td>
+                            <td>FWD</td>
+                        </tr>
+                        <tr>
+                            <td>Trợ lực lái</td>
+                            <td>Điện</td>
+                        </tr>
+                        <tr>
+                            <td>Dung tích bình xăng (lít)</td>
+                            <td>40</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+                Thành lập vào 20/05/2023 bởi H2VL
+        </p>
+    </footer>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    
+    SmallImg[0].onclick = function () {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src=SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src=SmallImg[4].src;
+    }
+    </script>
+</body>
+</html>

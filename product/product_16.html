@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI Cooper</title>
+    <link rel="shortcut icon" href="../img/logoH.png">
+    <link rel="stylesheet" href="../CSS/style_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../introduction.html">Giới thiệu</a>
+                <a href="../product.html">Các dòng xe</a>
+                <a href="../lienhe.html">Liên hệ</a>
+                <a href="../register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_1">
+            <div class="col-2">
+                <img src="../img/cooper-exterior.webp" id="ProductImg">
+              <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../img/cooper-exterior-1.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/mini-cooper-2.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/mini-cooper-3.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/Mini-Cooper-5.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/mini-cooper-2.webp" class="SmallImg">
+                </div>
+              </div>
+            </div>
+            <div class="main_text">
+                <div class="text">
+                    <h1>MINI Cooper</h1>
+                    <p>
+                        &nbsp;&nbsp;Cho đến nay, Mini Cooper 3 Door vẫn đang là một trong những dòng xe hatchback được yêu thích nhất không chỉ ở thị trường châu Âu mà còn trên toàn thế giới bất chấp việc nó đã được ra đời cách đây gần 60 năm. 
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;Mini là cái tên khởi nguồn từ Anh Quốc vào thập niên những năm 60 của thế kỉ XX và được mua lại bởi BMW vào năm 1994. 
+                    </p>
+                </div>
+                <div class="table">
+                    <h2>
+                        Thông số kỹ thuật MINI Cooper 2023
+                    </h2>
+                    <table border="1">
+                        <tr>
+                            <th>Thông số</th>
+                            <th>MINI Cooper</th>
+                        </tr>
+                        <tr>
+                            <td>Số chỗ ngồi</td>
+                            <td>04</td>
+                        </tr>
+                        <tr>
+                            <td>Kiểu xe</td>
+                            <td>Hatchback</td>
+                        </tr>
+                        <tr>
+                            <td>Xuất xứ</td>
+                            <td>Nhập khẩu</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước DxRxC</td>
+                            <td>3.850 x 1.727 x 1.414 mm.</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều dài cơ sở</td>
+                            <td>2.495mm</td>
+                        </tr>
+                        <tr>
+                            <td>Động cơ</td>
+                            <td>1.5l 3 xi lanh</td>
+                        </tr>
+                        <tr>
+                            <td>Khối lượng không tải (kg)</td>
+                            <td>1191</td>
+                        </tr>
+                        <tr>
+                            <td>Dung tích bình nhiên liệu</td>
+                            <td>47 lít</td>
+                        </tr>
+                        <tr>
+                            <td>Hộp số</td>
+                            <td>Steptronic 6 cấp</td>
+                        </tr>
+                        <tr>
+                            <td>Lốp xe</td>
+                            <td>195/55R16</td>
+                        </tr>
+                        <tr>
+                            <td>Lazang</td>
+                            <td>Hợp kim 16 inch</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+                Thành lập vào 20/05/2023 bởi H2VL
+        </p>
+    </footer>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    
+    SmallImg[0].onclick = function () {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src=SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src=SmallImg[4].src;
+    }
+    </script>
+</body>
+</html>

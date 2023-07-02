@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Model 3</title>
+    <link rel="shortcut icon" href="../img/logoH.png">
+    <link rel="stylesheet" href="../CSS/style_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../introduction.html">Giới thiệu</a>
+                <a href="../product.html">Các dòng xe</a>
+                <a href="../lienhe.html">Liên hệ</a>
+                <a href="../register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_1">
+            <div class="col-2">
+                <img src="../img/model-3-exterior.webp" id="ProductImg">
+              <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../img/model-3-exterior-1.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/model-3-exterior-2.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/model-3-interior-3.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/model-3-interior-4.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/model-3-interior-5.webp" class="SmallImg">
+                </div>
+              </div>
+            </div>
+            <div class="main_text">
+                <div class="text">
+                    <h1>Tesla Model 3</h1>
+                    <p>
+                        &nbsp;&nbsp;Tesla Model 3 là dòng sedan chạy điện cỡ trung của nhà sản xuất ô tô Tesla, Mỹ. Ra đời lần đầu tháng 07-2017, đến nay Model 3 vẫn ở thế hệ thứ nhất.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;Tesla công bố giá Model 3 từ 35 ngàn USD nhưng nay đã tăng lên một chút. Với tình trạng lượng đặt hàng quá lớn. Ngay trước ngày ra mắt, dòng xe này đã được thông báo là có đến 500 ngàn đơn đặt hàng trên khắp thế giới.
+                    </p>
+                </div>
+                <div class="table">
+                    <h2>
+                        Thông số kỹ thuật Tesla Model 3
+                    </h2>
+                    <table border="1">
+                        <tr>
+                            <th>Thông số</th>
+                            <th>Tesla Model 3</th>
+                        </tr>
+                        <tr>
+                            <td>Kiểu dáng</td>
+                            <td>Sedan 05 chỗ</td>
+                        </tr>
+                        <tr>
+                            <td>Động cơ</td>
+                            <td>Electric </td>
+                        </tr>
+                        <tr>
+                            <td>Công suất (Hp)</td>
+                            <td>271</td>
+                        </tr>
+                        <tr>
+                            <td>Momen xoắn (Nm)</td>
+                            <td>420</td>
+                        </tr>
+                        <tr>
+                            <td>Hộp số</td>
+                            <td>1AT</td>
+                        </tr>
+                        <tr>
+                            <td>Dẫn động</td>
+                            <td>RWD</td>
+                        </tr>
+                        <tr>
+                            <td>Tốc độ tối đa</td>
+                            <td>209 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước DRC (mm)</td>
+                            <td>4694x 1849x 1443</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều dài cơ sở (mm)</td>
+                            <td>2875</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước lốp</td>
+                            <td>P235/45 R18/td>
+                        </tr>
+                        <tr>
+                            <td>Tự trọng</td>
+                            <td>1655 (kg)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+                Thành lập vào 20/05/2023 bởi H2VL
+        </p>
+    </footer>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    
+    SmallImg[0].onclick = function () {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src=SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src=SmallImg[4].src;
+    }
+    </script>
+</body>
+</html>

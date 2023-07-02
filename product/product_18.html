@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz GLA</title>
+    <link rel="shortcut icon" href="../img/logoH.png">
+    <link rel="stylesheet" href="../CSS/style_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../introduction.html">Giới thiệu</a>
+                <a href="../product.html">Các dòng xe</a>
+                <a href="../lienhe.html">Liên hệ</a>
+                <a href="../register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_1">
+            <div class="col-2">
+                <img src="../img/gla-exterior.webp" id="ProductImg">
+              <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../img/gla-exterior-1.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/gla-exterior-2.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/gla-exterior-3.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/gla-exterior-4.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/gla-exterior-5.webp" class="SmallImg">
+                </div>
+              </div>
+            </div>
+            <div class="main_text">
+                <div class="text">
+                    <h1>Mercedes-Benz GLA</h1>
+                    <p>
+                        &nbsp;&nbsp;Mercedes-Benz GLA đã trở thành một đại diện nổi bật trong phân khúc SUV hạng sang cỡ nhỏ đang ngày càng trở nên nhộn nhịp và hấp dẫn hơn, với mức doanh số ấn tượng trong khoảng thời gian dài.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;Mercedes GLA 200 mang đầy hơi thở hiện đại với những đường nét thiết kế cứng cáp và mạnh mẽ.
+                    </p>
+                </div>
+                <div class="table">
+                    <h2>
+                        Thông số kỹ thuật Mercedes-Benz GLA 
+                    </h2>
+                    <table border="1">
+                        <tr>
+                            <th>Thông số</th>
+                            <th>Mercedes-Benz GLA</th>
+                        </tr>
+                        <tr>
+                            <td>Số chỗ ngồi</td>
+                            <td>05</td>
+                        </tr>
+                        <tr>
+                            <td>Kiểu xe</td>
+                            <td>Sedan hạng A</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước DxRxC</td>
+                            <td>4424 x 1804 x 1494 (mm)</td>
+                        </tr>
+                        <tr>
+                            <td>Tự trọng</td>
+                            <td>1395/545 (kg)</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều dài cơ sở</td>
+                            <td>2699 (mm)</td>
+                        </tr>
+                        <tr>
+                            <td>Dung tích công tác</td>
+                            <td>1595 (cc)</td>
+                        </tr>
+                        <tr>
+                            <td>Động cơ</td>
+                            <td>I4</td>
+                        </tr>
+                        <tr>
+                            <td>Vận tốc tối đa</td>
+                            <td>215 (km/h)</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ dẫn động</td>
+                            <td>Cầu trước</td>
+                        </tr>
+                        <tr>
+                            <td>Tăng tốc</td>
+                            <td>8,4s (0 – 100 km/h)</td>
+                        </tr>
+                        <tr>
+                            <td>Mức tiêu thụ nhiên liệu</td>
+                            <td>8,76 (l/100km)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+                Thành lập vào 20/05/2023 bởi H2VL
+        </p>
+    </footer>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    
+    SmallImg[0].onclick = function () {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src=SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src=SmallImg[4].src;
+    }
+    </script>
+</body>
+</html>

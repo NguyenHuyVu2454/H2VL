@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari F8 Tributo</title>
+    <link rel="shortcut icon" href="../img/logoH.png">
+    <link rel="stylesheet" href="../CSS/style_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../introduction.html">Giới thiệu</a>
+                <a href="../product.html">Các dòng xe</a>
+                <a href="../lienhe.html">Liên hệ</a>
+                <a href="../register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_1">
+            <div class="col-2">
+                <img src="../img/f8-tributo-exterior.webp" id="ProductImg">
+              <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../img/f8-tributo-exterior-1.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/f8-tributo-exterior-2.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/f8-tributo-exterior-3.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/f8-tributo-exterior-4.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/f8-tributo-exterior-2.webp" class="SmallImg">
+                </div>
+              </div>
+            </div>
+            <div class="main_text">
+                <div class="text">
+                    <h1>Ferrari F8 Tributo</h1>
+                    <p>
+                        &nbsp;&nbsp;Ferrari F8 Tributo 2023 sử dụng chất liệu da cao cấp và carbon làm hai chất liệu chính thường xuất  hiện bên trong khoang cabin khiến cho dòng xe này thêm đẳng cấp và thời thượng hơn rất  nhiều.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;Cụ thể như cửa gió điều hòa được Ferrari F8 Tributo 2023 thiết kế theo dạng hình tròn cổ điển, màn hình cảm ứng được đặt đối diện với ghế phụ,… hầu hết các chi tiết đều hướng về phía người lái giúp cho họ có thể chủ động hơn trong điều khiển. 
+                    </p>
+                </div>
+                <div class="table">
+                    <h2>
+                        Thông số kỹ thuật Ferrari F8 Tributo
+                    </h2>
+                    <table border="1">
+                        <tr>
+                            <th>Thông số</th>
+                            <th>Ferrari F8 Tributo</th>
+                        </tr>
+                        <tr>
+                            <td>Dòng xe</td>
+                            <td>GT 2 cửa 2+2</td>
+                        </tr>
+                        <tr>
+                            <td>Động cơ</td>
+                            <td>V8, tăng áp kép, 3.9 lít </td>
+                        </tr>
+                        <tr>
+                            <td>Chiều rộng cơ sở trước/ sau</td>
+                            <td>1583/ 1567mm</td>
+                        </tr>
+                        <tr>
+                            <td>Dung tích</td>
+                            <td>3855 cc</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất tối đa</td>
+                            <td>620 mã lực</td>
+                        </tr>
+                        <tr>
+                            <td>Mô men xoắn cực đại</td>
+                            <td>760 Nm</td>
+                        </tr>
+                        <tr>
+                            <td>Hộp số</td>
+                            <td>Tự động 08 cấp</td>
+                        </tr>
+                        <tr>
+                            <td>Tăng tốc 0-100km/h</td>
+                            <td>3.45s</td>
+                        </tr>
+                        <tr>
+                            <td>Tốc độ tối đa</td>
+                            <td>320 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước tổng thể DxRxC</td>
+                            <td>4.586x1.938x1.318 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều dài cơ sở</td>
+                            <td>2.670mm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+                Thành lập vào 20/05/2023 bởi H2VL
+        </p>
+    </footer>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    
+    SmallImg[0].onclick = function () {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src=SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src=SmallImg[4].src;
+    }
+    </script>
+</body>
+</html>

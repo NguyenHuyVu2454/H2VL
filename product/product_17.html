@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz C-Class</title>
+    <link rel="shortcut icon" href="../img/logoH.png">
+    <link rel="stylesheet" href="../CSS/style_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../introduction.html">Giới thiệu</a>
+                <a href="../product.html">Các dòng xe</a>
+                <a href="../lienhe.html">Liên hệ</a>
+                <a href="../register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_1">
+            <div class="col-2">
+                <img src="../img/new-c-class-exterior.webp" id="ProductImg">
+              <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../img/c-class-exterior-1.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/c-class-exterior-2.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/c-class-exterior-3.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/c-class-exterior-4.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/c-class-exterior-5.webp" class="SmallImg">
+                </div>
+              </div>
+            </div>
+            <div class="main_text">
+                <div class="text">
+                    <h1>Mercedes-Benz C-Class</h1>
+                    <p>
+                        &nbsp;&nbsp;Mercedes C Class 2023 mới ra mắt tại Việt Nam cuối 4 vừa qua với 4 phiên bản, trong đó có 3 phiên bản lắp ráp trong nước mới nhận đặt cọc và sẽ được bàn giao trong năm nay. 
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;Mercedes C Class 2023 được giới thiệu tại Việt Nam với 2 gói thiết kế nội – ngoại thất là Avantgarde và AMG, như gợi ý trong tên gọi. 
+                    </p>
+                </div>
+                <div class="table">
+                    <h2>
+                        Thông số kỹ thuật Mercedes-Benz C-Class
+                    </h2>
+                    <table border="1">
+                        <tr>
+                            <th>Thông số</th>
+                            <th>Mercedes-Benz C-Class</th>
+                        </tr>
+                        <tr>
+                            <td>Số chỗ ngồi</td>
+                            <td>04</td>
+                        </tr>
+                        <tr>
+                            <td>Kiểu xe</td>
+                            <td>Sedan</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước DxRxC</td>
+                            <td>4751 x 1890 x 1438</td>
+                        </tr>
+                        <tr>
+                            <td>Động cơ</td>
+                            <td>I4 1.5L, EQ Boost</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều dài cơ sở</td>
+                            <td>2865 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Xuất xứ</td>
+                            <td>Lắp ráp trong nước</td>
+                        </tr>
+                        <tr>
+                            <td>Hộp số</td>
+                            <td>Tự động 9 cấp</td>
+                        </tr>
+                        <tr>
+                            <td>Dung tích bình nhiên liệu</td>
+                            <td>66L</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ thống treo</td>
+                            <td>Khí nén</td>
+                        </tr>
+                        <tr>
+                            <td>Tốc độ tối đa (km/h)</td>
+                            <td>246 – 250</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước lazang (inch)</td>
+                            <td>17 – 18</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+                Thành lập vào 20/05/2023 bởi H2VL
+        </p>
+    </footer>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    
+    SmallImg[0].onclick = function () {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src=SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src=SmallImg[4].src;
+    }
+    </script>
+</body>
+</html>

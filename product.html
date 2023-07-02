@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm H2VL</title>
+    <link rel="shortcut icon" href="img/logoH.png" />
+    <link rel="stylesheet" href="CSS/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @keyframes flash {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      #logo {
+        animation: flash 1s infinite;
+      }
+      @keyframes flash-color {
+        0% {
+          color: initial;
+        }
+        50% {
+          color: white;
+        }
+        100% {
+          color: initial;
+        }
+      }
+
+      .flash-link {
+        animation: flash-color 1s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="brand">H2VL</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="index.html">Trang chủ</a>
+          <a href="introduction.html">Giới thiệu</a>
+          <a href="product.html">Các dòng xe</a>
+          <a href="lienhe.html">Liên hệ</a>
+          <a href="register.html">Đăng kí</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main_h1">
+        <h1>các dòng xe của chúng tôi</h1>
+      </div>
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="&nbsp;&nbsp;Nhập từ khóa" />
+        <button onclick="searchProduct()"><i class="fa-solid fa-magnifying-glass"></i>Tìm kiếm</button>
+      </div>
+      <div class="phanloai">
+        <button onclick="filterCars('w')">Volkswagen</button>
+        <button onclick="filterCars('audi')">Audi</button>
+        <button onclick="filterCars('bentley')">Bentley</button>
+        <button onclick="filterCars('toyota')">Toyota</button>
+        <button onclick="filterCars('BMW')">BMW</button>
+        <button onclick="filterCars('tesla')">Tesla</button>
+        <button onclick="filterCars('ferrari')">Ferrari</button>
+        <button onclick="filterCars('ford')">Ford</button>
+        <button onclick="filterCars('Honda')">Honda</button>
+        <button onclick="filterCars('Hyundai')">Hyundai</button>
+        <button onclick="filterCars('Jeep')">Jeep</button>
+        <button onclick="filterCars('Kia')">Kia</button>
+        <button onclick="filterCars('Mitsubishi')">Mitsubishi</button>
+        <button onclick="filterCars('lexus')">Lexus</button>
+        <button onclick="filterCars('MINI')">MINI</button>
+        <button onclick="filterCars('Mercedes-Benz')">Mercedes-Benz</button>
+        <button onclick="filterCars('Rolls-Royce')">Rolls-Royce</button>
+      </div>
+      <div class="main_main">
+        <div class="main_table w">
+          <div class="main_img">
+            <img src="img/virtus.jpeg" alt="" />
+            <div class="main_lh">
+              <h3>1.069.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Volkswagen Virtus</h2>
+            <a href="product/product_1.html">Tìm hiểu thêm</a>
+          </div>
+        </div>     
+        <div class="main_table audi">
+          <div class="main_img">
+            <img src="img/a4.webp" alt="" />
+            <div class="main_lh">
+              <h3>693.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Audi A1</h2>
+            <a href="product/product_2.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table bentley">
+          <div class="main_img">
+            <img src="img/bentayga.webp" alt="" />
+            <div class="main_lh">
+              <h3>17.000.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Bentley Bentayga</h2>
+            <a href="product/product_3.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table toyota">
+          <div class="main_img">
+            <img src="img/innova.webp" alt="" />
+            <div class="main_lh">
+              <h3>575.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Toyota Innova Crysta</h2>
+            <a href="product/product_4.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table BMW" >
+          <div class="main_img">
+            <img src="img/2022-m340i.webp" alt="" />
+            <div class="main_lh">
+              <h3>4.600.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>BMW M340i</h2>
+            <a href="product/product_5.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table tesla">
+          <div class="main_img">
+            <img src="img/model.webp" alt="" />
+            <div class="main_lh">
+              <h3>918.937.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Tesla Model 3</h2>
+            <a href="product/product_6.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table ferrari">
+          <div class="main_img">
+            <img src="img/Ferrari-Portofino.webp" alt="" />
+            <div class="main_lh">
+              <h3>4.900.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Ferrari Portofino</h2>
+            <a href="product/product_7.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table ferrari">
+          <div class="main_img">
+            <img src="img/f8-tributo.webp" alt="" />
+            <div class="main_lh">
+              <h3> 5.000.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Ferrari F8 Tributo</h2>
+            <a href="product/product_8.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table ford">
+          <div class="main_img">
+            <img src="img/Ford-EcoSport.webp" alt="" />
+            <div class="main_lh">
+              <h3>686.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Ford EcoSport</h2>
+            <a href="product/product_9.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table Honda" >
+          <div class="main_img">
+            <img src="img/amaze.webp" alt="" />
+            <div class="main_lh">
+              <h3>197.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Honda Amaze</h2>
+            <a href="product/product_10.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table Hyundai">
+          <div class="main_img">
+            <img src="img/creta.webp" alt="" />
+            <div class="main_lh">
+              <h3>640.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Hyundai Creta</h2>
+            <a href="product/product_11.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table Jeep">
+          <div class="main_img">
+            <img src="img/compass.webp" alt="" />
+            <div class="main_lh">
+              <h3>651.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Jeep Compass</h2>
+            <a href="product/product_12.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table Kia">
+          <div class="main_img">
+            <img src="img/sonet.webp" alt="" />
+            <div class="main_lh">
+              <h3> 598.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Kia Sonet</h2>
+            <a href="product/product_13.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table Mitsubishi" >
+          <div class="main_img">
+            <img src="img/Mitsubishi.webp" alt="" />
+            <div class="main_lh">
+              <h3>1.365.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Mitsubishi Pajero Sport</h2>
+            <a href="product/product_14.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table lexus" >
+          <div class="main_img">
+            <img src="img/lexus-lc.webp" alt="" />
+            <div class="main_lh">
+              <h3>2.400.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Lexus LC 500h</h2>
+            <a href="product/product_15.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table MINI">
+          <div class="main_img">
+            <img src="img/cooper-exterior.webp" alt="" />
+            <div class="main_lh">
+              <h3>2.289.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>MINI Cooper</h2>
+            <a href="product/product_16.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table Mercedes-Benz">
+          <div class="main_img">
+            <img src="img/new-c-class.webp" alt="" />
+            <div class="main_lh">
+              <h3>1.900.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Mercedes-Benz C-Class</h2>
+            <a href="product/product_17.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table Mercedes-Benz">
+          <div class="main_img">
+            <img src="img/gla.webp" alt="" />
+            <div class="main_lh">
+              <h3>8.200.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Mercedes-Benz GLA</h2>
+            <a href="product/product_18.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table BMW">
+          <div class="main_img">
+            <img src="img/new-7-series.webp" alt="" />
+            <div class="main_lh">
+              <h3>5.200.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>BMW 7 Series</h2>
+            <a href="product/product_19.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table BMW">
+          <div class="main_img">
+            <img src="img/z4r.webp" alt="" />
+            <div class="main_lh">
+              <h3>3.400.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>BMW Z4</h2>
+            <a href="product/product_20.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+        <div class="main_table Rolls-Royce">
+          <div class="main_img">
+            <img src="img/RollsRoyce.webp" alt="" />
+            <div class="main_lh">
+              <h3>46.000.000.000 VNĐ</h3>
+            </div>
+          </div>
+          <div class="main_tt">
+            <h2>Rolls-Royce Phantom</h2>
+            <a href="product/product_21.html"> Tìm hiểu thêm </a>
+          </div>
+        </div>
+      </div>
+      <div class="main_btn">
+        <button id="registerButton" style="cursor: pointer">
+          Đăng ký lái thử
+        </button>
+      </div>
+      <div id="registerForm" style="display: none">
+        <div class="FomrAA">
+          <div class="registerForm_form">
+            <div class="iconexit">
+              <img src="img/877932.png" alt="" />
+            </div>
+            <form action="">
+              <h2>Nhận báo giá và đăng ký lái thử</h2>
+              <input type="radio" name="1" id="1" /> Trả góp&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="1" id="1" /> Trả thẳng
+              <br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="&nbsp;&nbsp;Họ và tên"
+              />
+              <br />
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="&nbsp;&nbsp;Số điện thoại"
+              />
+              <br />
+              <select name="xemuonmua" id="buy">
+                <option value="">Xe muốn mua</option>
+                <option value="">Rolls-Royce Phantom</option>
+                <option value="">BMW Z4</option>
+                <option value="">BMW 7 Series</option>
+                <option value="">Mercedes-Benz GLA</option>
+                <option value="">Mercedes-Benz C-Class</option>
+                <option value="">MINI Cooper</option>
+                <option value="">Lexus LC 500h</option>
+                <option value="">Mitsubishi Pajero Sport</option>
+                <option value="">Kia Sonet</option>
+                <option value="">Jeep Compass</option>
+                <option value="">Hyundai Creta</option>
+                <option value="">Honda Amaze</option>
+                <option value="">Ford EcoSport</option>
+                <option value="">Ferrari F8 Tributo</option>
+                <option value="">Ferrari Portofino</option>
+                <option value="">Tesla Model 3</option>
+                <option value="">BMW M340i</option>
+                <option value="">Toyota Innova Crysta</option>
+                <option value="">Audi A1</option>
+                <option value="">Bentley Bentayga</option>
+                <option value="">Volkswagen Virtus</option>
+              </select>
+              <br />
+              <input
+                type="submit"
+                value="gửi yêu cầu ngay"
+                style="cursor: pointer"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_1">
+        <div class="footer_img">
+          <img src="img/pexels-photo-733745.webp" alt="" />
+        </div>
+        <div class="footer_form">
+          <form action="">
+            <h2>Nhận báo giá và đăng ký lái thử</h2>
+            <input type="radio" name="1" id="1" /> Trả góp&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="1" id="1" /> Trả thẳng
+            <br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="&nbsp;&nbsp;Họ và tên"
+            />
+            <br />
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="&nbsp;&nbsp;Số điện thoại"
+            />
+            <br />
+            <select name="xemuonmua" id="buy">
+              <option value="">Xe muốn mua</option>
+              <option value="">Rolls-Royce Phantom</option>
+              <option value="">BMW Z4</option>
+              <option value="">BMW 7 Series</option>
+              <option value="">Mercedes-Benz GLA</option>
+              <option value="">Mercedes-Benz C-Class</option>
+              <option value="">MINI Cooper</option>
+              <option value="">Lexus LC 500h</option>
+              <option value="">Mitsubishi Pajero Sport</option>
+              <option value="">Kia Sonet</option>
+              <option value="">Jeep Compass</option>
+              <option value="">Hyundai Creta</option>
+              <option value="">Honda Amaze</option>
+              <option value="">Ford EcoSport</option>
+              <option value="">Ferrari F8 Tributo</option>
+              <option value="">Ferrari Portofino</option>
+              <option value="">Tesla Model 3</option>
+              <option value="">BMW M340i</option>
+              <option value="">Toyota Innova Crysta</option>
+              <option value="">Audi A1</option>
+              <option value="">Bentley Bentayga</option>
+              <option value="">Volkswagen Virtus</option>
+            </select>
+            <br />
+            <input
+              type="submit"
+              value="gửi yêu cầu ngay"
+              style="cursor: pointer"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="footer_2">
+        <div class="footer_img" style="height: 100px">
+          <img
+            id="logo"
+            src="img/logoH.png"
+            alt=""
+            style="width: 100px; border-radius: 100px; border: 2px solid white"
+          />
+        </div>
+        <div class="footer_2_1">
+          <h3>H2VL | car sales</h3>
+          <hr />
+          <p>H2VL - Bán ô tô chính hãng</p>
+          <p>Showroom: Ngũ Hành Sơn, TP. Đà Nẵng</p>
+        </div>
+        <div class="footer_2_2">
+          <h3>Hỗ trợ khách hàng</h3>
+          <hr />
+          <p>Hotline: 0123456789</p>
+          <p>Email: H2VLhtkh@gmail.com</p>
+        </div>
+        <div class="footer_2_3">
+          <h3>follow</h3>
+          <hr />
+          <p>
+            <a class="flash-link" href=""><i class="fa-regular fa-envelope"></i></a>
+            <a class="flash-link" href=""><i class="fa-solid fa-phone"></i></a>
+            <a class="flash-link" href=""><i class="fa-brands fa-youtube"></i></a>
+          </p>
+        </div>
+      </div>
+      <div class="footer_3">
+        <p>Thành lập vào 20/05/2023 bởi H2VL</p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
+
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+      });
+      const btns = document.querySelectorAll(".nav-btn");
+
+      var sliderNav = function (manual) {
+        btns.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        btns[manual].classList.add("active");
+      };
+
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          sliderNav(i);
+        });
+      });
+      // Lấy đối tượng button và form
+      const registerButton = document.getElementById("registerButton");
+      const registrationForm = document.getElementById("registerForm");
+
+      // Gán sự kiện click cho button
+      registerButton.addEventListener("click", function () {
+        // Kiểm tra trạng thái hiện tại của form
+        const isFormVisible = registrationForm.style.display === "block";
+
+        // Nếu form đang hiển thị, ẩn form đi. Ngược lại, hiển thị form
+        registrationForm.style.display = isFormVisible ? "none" : "block";
+      });
+      // Lấy đối tượng iconexit và form
+      const iconExit = document.querySelector(".iconexit");
+      const registerForm = document.getElementById("registerForm");
+
+      // Gán sự kiện click cho iconexit
+      iconExit.addEventListener("click", function () {
+        // Ẩn form registerForm
+        registerForm.style.display = "none";
+      });
+      function searchProduct() {
+        var input = document.getElementById("search-input").value.toLowerCase();
+        var productTitles = document.querySelectorAll(".main_tt h2");
+
+        for (var i = 0; i < productTitles.length; i++) {
+          var title = productTitles[i].innerText.toLowerCase();
+          var parentDiv = productTitles[i].closest(".main_table");
+          if (title.includes(input)) {
+            parentDiv.style.display = "block";
+          } else {
+            parentDiv.style.display = "none";
+          }
+        }
+      }
+      function clickProduct(hang) {
+  // Ẩn tất cả các div chứa sản phẩm
+  var divs = document.querySelectorAll('div[id^="hang-"]');
+  for (var i = 0; i < divs.length; i++) {
+    divs[i].style.display = 'none';
+  }
+
+  // Hiển thị div sản phẩm tương ứng với hãng được chọn
+  var selectedDiv = document.getElementById(hang);
+  if (selectedDiv) {
+    selectedDiv.style.display = 'block';
+  }
+}
+
+// Xử lý sự kiện nhấp vào nút
+var button = document.getElementById('W'); // Thay 'your-button-id' bằng ID của nút button
+button.addEventListener('click', function() {
+  var hang = 'W'; // Thay 'hang-' bằng mã hãng tương ứng khi nhấp vào nút
+  clickProduct(hang);
+});
+function filterCars(className) {
+  // Ẩn tất cả các sản phẩm
+  var products = document.getElementsByClassName("main_table");
+  for (var i = 0; i < products.length; i++) {
+    products[i].style.display = "none";
+  }
+
+  // Hiển thị tất cả các sản phẩm có cùng lớp
+  var selectedProducts = document.getElementsByClassName(className);
+  for (var j = 0; j < selectedProducts.length; j++) {
+    selectedProducts[j].style.display = "block";
+  }
+}
+
+    </script>
+  </body>
+</html>

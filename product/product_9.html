@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford EcoSport</title>
+    <link rel="shortcut icon" href="../img/logoH.png">
+    <link rel="stylesheet" href="../CSS/style_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../introduction.html">Giới thiệu</a>
+                <a href="../product.html">Các dòng xe</a>
+                <a href="../lienhe.html">Liên hệ</a>
+                <a href="../register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_1">
+            <div class="col-2">
+                <img src="../img/Ford.webp" id="ProductImg">
+              <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../img/ecosport-exterior.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/ecosport-exterior-r2.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/ecosport-exterior-3.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/ecosport-exterior-4.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/ecosport-interior-5.webp" class="SmallImg">
+                </div>
+              </div>
+            </div>
+            <div class="main_text">
+                <div class="text">
+                    <h1>Ford EcoSport</h1>
+                    <p>
+                        &nbsp;&nbsp;Ford EcoSport 2023 được Ford Việt Nam phân phối chính hãng ở dạng lắp ráp trong nước với 3 phiên bản: 1.5AT Trend, 1.5AT Titanium, 1.0AT Titanium.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;Từ thiết kế ngoại hình, Ford EcoSport thể hiện rõ là một mẫu compact SUV thể thao, năng động, nhỏ gọn và có tính linh hoạt cao. Những đường nét trên EcoSport khá mạnh mẽ, rắn rỏi, mang đậm chất xe Mỹ nói chung và xe Ford nói riêng.
+                    </p>
+                </div>
+                <div class="table">
+                    <h2>
+                        Thông số kỹ thuật Ford EcoSport 2023
+                    </h2>
+                    <table border="1">
+                        <tr>
+                            <th>Thông số</th>
+                            <th>Ford EcoSport</th>
+                        </tr>
+                        <tr>
+                            <td>Dài x rộng x cao (mm)</td>
+                            <td>4.096 x 1.765 x 1.665</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều dài cơ sở (mm)</td>
+                            <td>2.519</td>
+                        </tr>
+                        <tr>
+                            <td>Khoảng sáng gầm xe (mm)</td>
+                            <td>175</td>
+                        </tr>
+                        <tr>
+                            <td>Bán kính vòng quay (mm)</td>
+                            <td>5,1</td>
+                        </tr>
+                        <tr>
+                            <td>Đèn ban ngày</td>
+                            <td>Có</td>
+                        </tr>
+                        <tr>
+                            <td>Đèn sương mù</td>
+                            <td>Không</td>
+                        </tr>
+                        <tr>
+                            <td>Gạt mưa tự động</td>
+                            <td>Không</td>
+                        </tr>
+                        <tr>
+                            <td>Lốp</td>
+                            <td>205/60R16</td>
+                        </tr>
+                        <tr>
+                            <td>Động cơ</td>
+                            <td>1.0L EcoBoost 12 van</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất cực đại</td>
+                            <td>123/6.500</td>
+                        </tr>
+                        <tr>
+                            <td>Hộp số</td>
+                            <td>6AT</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+                Thành lập vào 20/05/2023 bởi H2VL
+        </p>
+    </footer>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    
+    SmallImg[0].onclick = function () {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src=SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src=SmallImg[4].src;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolls-Royce Phantom</title>
+    <link rel="shortcut icon" href="../img/logoH.png">
+    <link rel="stylesheet" href="../CSS/style_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../introduction.html">Giới thiệu</a>
+                <a href="../product.html">Các dòng xe</a>
+                <a href="../lienhe.html">Liên hệ</a>
+                <a href="../register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_1">
+            <div class="col-2">
+                <img src="../img/RollsRoyce-Phantom.webp" id="ProductImg">
+              <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../img/RollsRoyce-Phantom-1.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/Rolls-Royce-Phantom-2.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/Rolls-Royce-Phantom-3.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/Rolls-Royce-Phantom-4.webp" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/Rolls-Royce-Phantom-5.webp" class="SmallImg">
+                </div>
+              </div>
+            </div>
+            <div class="main_text">
+                <div class="text">
+                    <h1>Rolls-Royce Phantom</h1>
+                    <p>
+                        &nbsp;&nbsp;Rolls-Royce – Chỉ cần nghe đến thương hiệu này thôi là người dùng cũng đủ hình dung ra những chiếc xe siêu sang nhất trên thị trường hiện nay.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;Đặc biệt, mỗi chiếc xe Rolls-Royce ra đời gần như là “độc bản” bởi tính cá nhân hóa trong từng chi tiết mà những vị khách yêu cầu chế tác riêng.
+                    </p>
+                </div>
+                <div class="table">
+                    <h2>
+                        Thông số kỹ thuật Rolls-Royce Phantom
+                    </h2>
+                    <table border="1">
+                        <tr>
+                            <th>Thông số</th>
+                            <th>Rolls-Royce Phantom</th>
+                        </tr>
+                        <tr>
+                            <td>Số chỗ ngồi</td>
+                            <td>04</td>
+                        </tr>
+                        <tr>
+                            <td>Kiểu xe</td>
+                            <td>SUV siêu sang</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước DxRxC</td>
+                            <td>5341 x 2164 x 1835</td>
+                        </tr>
+                        <tr>
+                            <td>Động cơ</td>
+                            <td>Bi-Turbo V12</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều dài cơ sở</td>
+                            <td>3295 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất</td>
+                            <td>592 mã lực</td>
+                        </tr>
+                        <tr>
+                            <td>Loại nhiên liệu</td>
+                            <td>Xăng</td>
+                        </tr>
+                        <tr>
+                            <td>Mô-men xoắn</td>
+                            <td>900Nm</td>
+                        </tr>
+                        <tr>
+                            <td>Hộp số</td>
+                            <td>8AT ZF</td>
+                        </tr>
+                        <tr>
+                            <td>Dẫn động</td>
+                            <td>4 bánh toàn thời gian (AWD)</td>
+                        </tr>
+                        <tr>
+                            <td>Cỡ mâm</td>
+                            <td>19 inch</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+                Thành lập vào 20/05/2023 bởi H2VL
+        </p>
+    </footer>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            }); 
+            btns[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    
+    SmallImg[0].onclick = function () {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src=SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function () {
+        ProductImg.src=SmallImg[4].src;
+    }
+    </script>
+</body>
+</html>

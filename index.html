@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ H2VL</title>
+    <link rel="shortcut icon" href="img/logoH.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">H2VL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Trang chủ</a>
+                <a href="introduction.html">Giới thiệu</a>
+                <a href="product.html">Các dòng xe</a>
+                <a href="lienhe.html">Liên hệ</a>
+                <a href="register.html">Đăng kí</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <video class="video-slides active" src="img/car_-_88481 (Original).mp4" autoplay muted loop></video>
+        <video class="video-slides" src="img/135728 (1440p).mp4" autoplay muted loop></video>
+        <video class="video-slides" src="img/158316 (Original).mp4" autoplay muted loop></video>
+        <video class="video-slides" src="img/pexels-amar-preciado-8262626-1920x1080-60fps.mp4" autoplay muted loop></video>
+        <video class="video-slides" src="img/car_-_72541 (Original).mp4" autoplay muted loop></video>
+        <div class="content active">
+            <h1>WELLCOME H2VL!<br><span>VIETNAM</span></h1>
+            <p>Đặt chân vào thế giới của sự hứng khởi và đam mê xe hơi tại H2VL. Chúng tôi tự hào là nơi cung cấp những chiếc xe chất lượng hàng đầu, đáp ứng mọi nhu cầu và mong muốn của khách hàng.</p>
+            <a href="">Tìm hiểu</a>
+        </div>
+        <div class="content">
+            <h1>trải nghiệm<br><span>Hoàn hảo</span></h1>
+            <p>H2VL mang đến cho bạn sự trải nghiệm mua sắm xe hoàn hảo. Với một danh mục đa dạng các dòng xe từ các hãng nổi tiếng, chúng tôi cam kết mang đến sự lựa chọn phong phú và đa dạng cho mọi tầng lớp khách hàng.</p>
+            <a href="">Tìm hiểu</a>
+        </div>
+        <div class="content">
+            <h1>Chất lượng<br><span>Độ tin cậy</span></h1>
+            <p>Chất lượng và độ tin cậy luôn là ưu tiên hàng đầu tại H2VL. Chúng tôi chỉ kinh doanh những chiếc xe chất lượng cao, đã qua kiểm định chặt chẽ để đảm bảo sự an tâm tuyệt đối cho khách hàng khi lựa chọn xe của mình.</p>
+            <a href="">Tìm hiểu</a>
+        </div>
+        <div class="content">
+            <h1>Tận tâm<br><span>chuyên nghiệp</span></h1>
+            <p>Sự phục vụ tận tâm và chuyên nghiệp là triết lý hoạt động của chúng tôi. Đội ngũ nhân viên tại H2VL luôn sẵn sàng hỗ trợ, tư vấn và giúp bạn tìm kiếm chiếc xe phù hợp nhất với nhu cầu và ngân sách của mình.</p>
+            <a href="">Tìm hiểu</a>
+        </div>
+        <div class="content">
+            <h1>trải nghiệm<br><span>tuyệt vời</span></h1>
+            <p>Hãy cùng trải nghiệm những điều tuyệt vời mà xe hơi mang lại. Truy cập ngay vào trang web của chúng tôi để khám phá thêm về các mẫu xe đẳng cấp và đặt mua ngay hôm nay. Hãy bắt đầu hành trình mới cùng H2VL và tìm kiếm chiếc xe mơ ước của bạn!</p>
+            <a href="">Tìm hiểu</a>
+        </div>
+        <div class="media-icon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slides");
+        const contents = document.querySelectorAll(".content");
+
+
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+
+
+
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    </script>
+</body>
+</html>

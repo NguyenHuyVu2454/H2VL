@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Đăng kí thành viên H2VL</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="shortcut icon" href="img/logoH.png">
+    <link rel="stylesheet" href="CSS/style4.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Đăng ký thành viên H2VL</h1>
+      <form action="php/process_form.php" method="post">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Họ và tên</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Nhập họ và tên"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Tên tài khoản</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Nhập tên tài khoản"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Nhập Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Số điện thoại</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Số điện thoại"/>
+          </div>
+          <div class="user-input-box">
+            <label for="password">Mật khẩu</label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Nhập mật khẩu"/>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Xác nhận mật khẩu</label>
+            <input type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Xác nhận mật khẩu"/>
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Giới tính</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Nữ</label>
+            <input type="radio" name="gender" value="other" id="other">
+            <label for="other">Khác</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Đăng ký">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
